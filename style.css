@@ -1,0 +1,149 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.5s;
+}
+a:hover{
+    box-shadow: 5px 5px 5px gray;
+    transition: 0.2s;
+    background-color: white;
+    color: gray;
+}
+.nav{
+    position: fixed;
+    padding: 5px;
+    background-color: #d4d4d4;
+    border-radius: 0px 10px 0px;
+    width: 100%;
+    transition: 0.5s;
+}
+.nav:hover{
+    box-shadow: 5px 5px 30px gray;
+    transition: 0.2s;
+}
+.home{
+    margin-left: 50px;
+}
+.sosmed{
+    margin-right: 50px;
+}
+.ig{
+    width: 25px;
+    margin-left: 10px;
+}
+.fb{
+    width: 30px;
+    margin-left: 10px;
+}
+.isi{
+    padding-top: 6%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+}
+.fotoabout1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px gray;
+    margin-bottom: 50px;
+}
+.fotoabout2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
+}
+.subjudul{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about2{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.judul{
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+}
+.inti{
+    font-size: 30px;
+    padding-left: 20px;
+}
+.footer{
+    text-align: center;
+    top: 100%;
+    position: sticky;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+.contain{
+    width: 570px;
+    overflow: hidden;
+    border: 10px solid #d4d4d4;
+    border-radius: 15px;
+}
+.wraper{
+    width: 100%;
+    display: flex;
+    animation: 12s slider infinite;
+}
+.img1{
+    width: 570px;
+    height: 570px;
+}
+@keyframes slider{
+    0%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.con{
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+.con1{
+    padding-left: 40%;
+    padding-right: 40%;
+}
