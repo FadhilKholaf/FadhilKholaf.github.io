@@ -1,7 +1,11 @@
 :root {
   --main-color: #610c9f;
   --second-color: #940b92;
-  --bg-content: linear-gradient(to right bottom, var(--main-color), var(--second-color));
+  --bg-content: linear-gradient(
+    to right bottom,
+    var(--main-color),
+    var(--second-color)
+  );
 }
 
 * {
@@ -9,6 +13,14 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2.5rem;
+  user-select: none;
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -17,6 +29,16 @@ main {
   min-height: 100vh;
   background-color: aliceblue;
 }
+
+.container-main {
+  flex-direction: row;
+}
+
+.welcome h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
 .sosmed-icon {
   width: max-content;
   margin-bottom: 1rem;
@@ -26,13 +48,13 @@ main {
 }
 
 /* about */
-.about-wrap{
+.about-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-container{
+.about-container {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 930px;
@@ -44,12 +66,12 @@ main {
   transition: 1s;
 }
 
-.about-container:hover{
+.about-container:hover {
   transform: scale(1.01);
   background: rgb(226, 226, 226);
 }
 
-.about-container img{
+.about-container img {
   width: 879px;
   border-radius: 1rem;
   height: auto;
@@ -72,4 +94,26 @@ main {
 .text-footer a:hover {
   color: #940b92;
   font-weight: 800;
+}
+
+@media screen and (max-width: 578px) {
+  .container-main {
+    flex-direction: column;
+  }
+  .welcome{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .about-container {
+    width: auto;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .about-container img {
+    width: 250px;
+    border-radius: 10px;
+    height: auto;
+  }
 }
