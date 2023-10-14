@@ -25,6 +25,36 @@ main {
   margin: 0 10px;
 }
 
+/* about */
+.about-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container{
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 930px;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.about-container:hover{
+  transform: scale(1.01);
+  background: rgb(226, 226, 226);
+}
+
+.about-container img{
+  width: 879px;
+  border-radius: 1rem;
+  height: auto;
+}
+
 .sosmed-icon:hover i {
   color: var(--main-color);
 }
