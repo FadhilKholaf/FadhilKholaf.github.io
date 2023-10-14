@@ -1,32 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3068337758636945"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="navbar">
-        <a href="index.html" class="nav">Home</a>
-        <a href="about.html" class="nav">About</a>
-        <a href="contact.html" class="nav">Contact</a>
-        <a href="https://www.instagram.com/m_fadhil_k_369/"><img src="photo/ig.png" alt="Instagram" class="sosmed"></a>
-    </div>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed z-1">
+            <div class="container-fluid d-flex ms-5">
+                <h2 class="fw-bold">
+                    Fadhil<span style="color: #940B92">.</span>
+                </h2>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" style="width: 15%;" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link font text-center" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font text-center" href="#about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container pt-5">
+        <div class="pt-5">
+
+            <img src="photo/blur3.jpg" alt="Profil" class="img-fluid" width="450px" height="auto">
+            <div class="welcome">
+                <p class=""><b>Hello, I'm Fadhil</b></p>
+                <p class="">Programmer | Student</p>
+                <p class=""><b>Welcome To My Website</b></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- about -->
     <div class="container">
-        <div class="homep">
-            <img src="photo/blur3.jpg" alt="Profil" class="profil">
-        </div>
-        <div class="welcome">
-            <p class="subwel"><b>Hello, I'm Fadhil</b></p><p class="sub">Programmer | Student</p>
-            <p class="subwel"><b>Welcome To My Website</b></p>
+        <div class="about">
+            <p class="des"><b>Telkom Malang High School Student</b></p>
+            <div class="awal">
+                <img src="photo/telkom.jpg" alt="SMK Telkom Malang" class="telkom">
+            </div>
+            <p class="des"><b>Alumni of MTsN 1 Tulungagung</b></p>
+            <div class="containera">
+                <div class="tel">
+                    <img src="photo/169mts.jpg" alt="MTsN 1 Tulungagung" class="telkom">
+                </div>
+                <div class="tel">
+                    <img src="photo/mtsn.jpg" alt="MTsN 1 Tulungagung" class="telkom">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        Made with &hearts; by Fadhil<br>&copy; 2022
     </div>
+
+    <!-- footer -->
+    <footer class="footer py-4 text-center mt-5" style="background: #610c9f; color: white;">
+        Made with &hearts; by <span class="text-footer">Fadhil</span> & <span class="text-footer"><a href="panntod.github.io">Pandhu</a></span> 
+        &copy;2023
+    </footer>
 </body>
+
 </html>
