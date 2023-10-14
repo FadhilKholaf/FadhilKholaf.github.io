@@ -1,6 +1,7 @@
 :root {
   --main-color: #610c9f;
   --second-color: #940b92;
+  --bg-content: linear-gradient(to right bottom, var(--main-color), var(--second-color));
 }
 
 * {
@@ -9,20 +10,36 @@
   font-family: "Inter", sans-serif;
 }
 body {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+main {
   min-height: 100vh;
   background-color: aliceblue;
 }
+.sosmed-icon {
+  width: max-content;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #212121;
+  margin: 0 10px;
+}
 
-.text-footer{
+.sosmed-icon:hover i {
+  color: var(--main-color);
+}
+
+/* footer */
+.text-footer {
   font-weight: 700;
 }
 
-.text-footer a{
+.text-footer a {
   text-decoration: none;
   color: white;
 }
 
-.text-footer a:hover{
+.text-footer a:hover {
   color: #940b92;
   font-weight: 800;
 }

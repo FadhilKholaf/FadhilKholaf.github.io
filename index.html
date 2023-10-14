@@ -28,12 +28,12 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" style="width: 15%;" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
                     <li class="nav-item">
-                        <a class="nav-link font text-center" href="index.html">HOME</a>
+                        <a class="nav-link font text-center fw-semibold" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font text-center" href="#about">ABOUT</a>
+                        <a class="nav-link font text-center fw-semibold" href="#about">ABOUT</a>
                     </li>
                 </ul>
             </div>
@@ -41,22 +41,35 @@
     </header>
 
     <!-- main -->
-    <main class="container pt-5">
-        <div class="pt-5">
+    <main class="pt-5">
+        <div class="pt-5 d-flex justify-content-center">
+            <img src="photo/main-photo.png" alt="Profil" class="img-fluid rounded-5" width="500px" height="auto">
+            <div class="justify-content-center d-flex mx-5" style="flex-direction: column; max-width: 600px;">
+                <h1 style="font-size: 5rem; font-weight: 400;">Hello, I'm Fadhil a <span
+                        style="color: #610c9f;">Programmer</span></h1>
+                <p class="fw-lighter fs-4">this is my personal portfolio to show my project and expirins web development
+                </p>
+                <button class="btn mt-3" style="background:#610c9f; color: white; width: 200px;">Download Cv</button>
 
-            <img src="photo/blur3.jpg" alt="Profil" class="img-fluid" width="450px" height="auto">
-            <div class="welcome">
-                <p class=""><b>Hello, I'm Fadhil</b></p>
-                <p class="">Programmer | Student</p>
-                <p class=""><b>Welcome To My Website</b></p>
+                <div class="sosmed mt-5">
+                    <a href="https://www.instagram.com/" class="sosmed-icon"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/" class="sosmed-icon"><i class="bi bi-github"></i></a>
+                    <a href="https://www.facebook.com/" class="sosmed-icon"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/" class="sosmed-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- about -->
-    <div class="container">
-        <div class="about">
-            <p class="des"><b>Telkom Malang High School Student</b></p>
+    <div class="container" id="about">
+        <div class="pt-5">
+            <h1>nextime</h1>
+            <p class=""><b>Telkom Malang High School Student</b></p>
             <div class="awal">
                 <img src="photo/telkom.jpg" alt="SMK Telkom Malang" class="telkom">
             </div>
@@ -75,7 +88,8 @@
 
     <!-- footer -->
     <footer class="footer py-4 text-center mt-5" style="background: #610c9f; color: white;">
-        Made with &hearts; by <span class="text-footer">Fadhil</span> & <span class="text-footer"><a href="panntod.github.io">Pandhu</a></span> 
+        Made with &hearts; by <span class="text-footer">Fadhil</span> & <span class="text-footer"><a
+                href="panntod.github.io">Pandhu</a></span>
         &copy;2023
     </footer>
 </body>
