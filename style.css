@@ -1,166 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-}
-body{
-    min-height: 100vh;
-}
-
-/* Header*/
-.navbar{
-    position: fixed;
-    top: 0;
-    padding: 30px;
-    width: 100%;
-    background-color: #d4d4d4;
-}
-.nav{
-    float: inline-start;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
-    margin-left: 20px;
-    border-radius: 12px;
-    color: #ffffff;
-    background-color: #a6a6a6;
-    transition: 0.3s;
-}
-.nav:hover{
-    box-shadow: 7px 7px 10px #a6a6a6;
-    transition: 0.5s;
-}
-.sosmed{
-    float: right;
-    margin-right: 80px;
-    width: 30px;
-    border-radius: 7px;
-}
-.sosmed:hover{
-    box-shadow: 7px 7px 10px #a6a6a6;
-    transition: 0.5s;
+:root {
+  --main-color: #610c9f;
+  --second-color: #940b92;
+  --bg-content: linear-gradient(
+    to right bottom,
+    var(--main-color),
+    var(--second-color)
+  );
 }
 
-/* Body */
-.container{
-    padding-top: 120px;
-    display: flex;
-}
-.containera{
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
-/* Home */
-.profil{
-    width: 720px;
-    border-radius: 30px;
-    margin-right: 50px;
-    margin-left: 40px;
-}
-.subwel{
-    margin-top: 150px;
-    font-size: 90px;
-}
-.sub{
-    font-size: 40px;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2.5rem;
+  user-select: none;
+  overflow-x: hidden;
 }
 
-/* About */
-.about{
-    margin-top: 30px;
-    width: 100%;
-}
-.des{
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 40px;
-}
-.telkom{
-    width: 800px;
-    height: 450px;
-    border-radius: 20px;
-}
-.tel{
-    margin-bottom: 100px;
-    margin-left: 5%;
-}
-.awal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+body {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Footer */
-.footer{
-    position: sticky;
-    padding: 10px;
-    top: 100%;
-    text-align: center;
-    background-color: #d4d4d4;
+main {
+  min-height: 100vh;
+  background-color: aliceblue;
 }
 
-/* Media */
-@media screen and (max-width:768px) {
-    a{
-        font-size: 20px;
-        margin-left: 5px;
-    }
-    .container{
-        display: contents;
-        margin-left: 0px;
-    }
-    .containera{
-        display: contents;
-    }
-    .sosmed{
-        margin-right: 40px;
-    }
+.container-main {
+  flex-direction: row;
+}
 
-    /* home */
-    .profil{
-        margin-top: 120px;
-        width: 360px;
-        border-radius: 50%;
-        margin-right: 0;
-        margin-bottom: 10px;
-        margin-left: 0;
-    }
-    .homep{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .welcome{
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .subwel{
-        font-size: 35px;
-        margin-top: 30px;
-    }
-    .sub{
-        font-size: 20px;
-        margin-bottom: 40px;
-    }
+.welcome{
+  font-size: 4rem;
+  font-weight: 600;
+}
 
-    /* about */
-    .about{
-        padding-top: 100px;
-    }
-    .des{
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    .telkom{
-        width: 360px;
-        height: 190px;
-        margin-left: 0px;
-    }
-    .tel{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 60px;
-    }
+.sosmed-icon {
+  width: max-content;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #212121;
+  margin: 0 10px;
+}
+
+/* about */
+.about-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 930px;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
+
+.about-container:hover {
+  transform: scale(1.01);
+  background: rgb(226, 226, 226);
+}
+
+.about-container img {
+  width: 879px;
+  border-radius: 1rem;
+  height: auto;
+}
+
+.sosmed-icon:hover i {
+  color: var(--main-color);
+}
+
+/* footer */
+.text-footer {
+  font-weight: 700;
+}
+
+.text-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.text-footer a:hover {
+  color: #940b92;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 578px) {
+  .container-main {
+    flex-direction: column;
+  }
+  .welcome{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .about-container {
+    width: auto;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .about-container img {
+    width: 250px;
+    border-radius: 10px;
+    height: auto;
+  }
 }
