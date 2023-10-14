@@ -34,9 +34,9 @@ main {
   flex-direction: row;
 }
 
-.welcome h1 {
-  font-size: 5rem;
-  font-weight: 400;
+.welcome{
+  font-size: 4rem;
+  font-weight: 600;
 }
 
 .sosmed-icon {
